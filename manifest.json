@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "Reddit Scrambler",
+    "version": "1.0",
+  
+    "description": "Scrambles Reddit username",
+
+    "permissions": [
+        "activeTab"
+    ],
+
+    "content_scripts": [
+      {
+        "matches": ["*://*.reddit.com/*"],
+        "js": ["scramble.js"]
+      }
+    ]
+  
+  }
